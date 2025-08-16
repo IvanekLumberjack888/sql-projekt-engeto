@@ -1,0 +1,2 @@
+# Ignorovat konfigurační soubor s hesly
+config/connection.properties
