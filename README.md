@@ -31,17 +31,8 @@ Tento projekt vznikl jako součást **ENGETO kurzu: Datová analýza s Pythonem*
 
 ## 🗂️ Struktura repozitáře
 
-```
-📦 ENGETO-SQL-Project/
-├── 📁 sql/
-│   ├── 📄 01_views.sql          # Definice všech pomocných pohledů
-│   ├── 📄 g_5.sql               # Hlavní skript otázky č. 5
-│   └── 📄 validation.sql        # Validace výsledků a kvality dat
-├── 📁 docs/
-│   └── 📄 analysis.md           # Detailní analýza výsledků
-├── 📄 README.md                 # Tato dokumentace
-└── 📄 LICENSE.md                # MIT licence
-```
+
+
 
 ---
 
