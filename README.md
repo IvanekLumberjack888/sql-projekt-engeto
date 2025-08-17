@@ -31,8 +31,32 @@ Tento projekt vznikl jako součást **ENGETO kurzu: Datová analýza s Pythonem*
 
 ## 🗂️ Struktura repozitáře
 
-
-
+sql-projekt-engeto/
+├── .gitignore
+├── README.md
+├── config/
+│   └── connection.properties
+├── docs/
+│   ├── 00_ERD.png
+│   ├── 01_project_directory.png
+│   ├── 02_project_structure.txt
+│   └── 03_research_questions.md
+└── scripts/
+    ├── 01_exploration/
+    │   └── 00_data_exploration.sql
+    ├── 02_views/
+    │   └── 01_views.sql
+    ├── 03_tables/
+    │   ├── 02_primary_table.sql
+    │   └── 03_secondary_table.sql
+    ├── 04_questions/
+    │   ├── 04_q_1.sql
+    │   ├── 05_q_2.sql
+    │   ├── 06_q_3.sql
+    │   ├── 07_q_4.sql
+    │   └── 08_q_5.sql
+    └── 05_validation/
+        └── 09_data_validation.sql
 
 ---
 
