@@ -167,7 +167,7 @@ SET search_path TO data_academy_content;
 **Ivo Doležal* 
 - 🐙 GitHub: [@ivaneklumberjack888](https://github.com/ivaneklumberjack888)
 - 💼 LinkedIn: [ivodolezal888](https://linkedin.com/in/ivan-eklum)
-- 📧 Email: ivousd@gmail.cz
+- 📧 Email: ivousd@gmail.com
 - 🎓 ENGETO Data analyst with Python, tímto uvádím lektory, kteří se mnou spolupracovali nocí a ránem. Rád bych jim poděkoval za spolupráci. Děkuji Pavle H., Matoušovi a Matoušovi, Jirkovi, Honzovi a Honzovi, Davidovi Příhodovi xD a všem ostatním. Díky.
 Nejvíc samozřejmě manželce. 🥰
 
