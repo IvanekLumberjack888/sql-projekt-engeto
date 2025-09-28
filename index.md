@@ -1,5 +1,5 @@
 ---
-title: sql-project-engeto
+title: sql-projekt-engeto
 ---
 Přehled mých projektů je ne webu: https://ivaneklumberjack888.github.io/#projects
 
