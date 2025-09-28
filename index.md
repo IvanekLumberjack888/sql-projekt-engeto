@@ -1,3 +1,6 @@
+---
+title: sql-project-engeto
+---
 Přehled mých projektů je ne webu: https://ivaneklumberjack888.github.io/#projects
 
 # 📊 Analýza vlivu HDP na mzdy a ceny potravin v ČR (2006–2018)
