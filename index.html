@@ -4,49 +4,37 @@
   <meta charset="UTF-8">
   <title>Analýza vlivu HDP na mzdy a ceny potravin v ČR (2006–2018)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Odkazy na tvůj hlavní styl a script.js -->
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <!-- Lokální styl projektu -->
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="https://ivaneklumberjack888.github.io/">Domů</a>
-      <a href="https://ivaneklumberjack888.github.io/#projects">Všechny projekty</a>
-      <a href="https://github.com/IvanekLumberjack888/sql-projekt-engeto">Repo GitHub</a>
-    </nav>
+  <div class="glass-card">
     <h1>📊 Analýza vlivu HDP na mzdy a ceny potravin v ČR (2006–2018)</h1>
-    <p>Přehled mých projektů je na webu: <a href="https://ivaneklumberjack888.github.io/#projects">ivaneklumberjack888.github.io</a></p>
-    <div class="badge-row" style="margin:1em 0;display:flex;flex-wrap:wrap;gap:8px;">
+    <p>Přehled projektů je na webu: <a href="https://ivaneklumberjack888.github.io/#projects" target="_blank">ivaneklumberjack888.github.io</a></p>
+    <div class="badge-row" style="margin:1em 0;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;">
       <img src="https://img.shields.io/badge/SQL-PostgreSQL-blue?style=for-the-badge&logo=postgresql" alt="SQL Badge"/>
       <img src="https://img.shields.io/badge/Data-Analysis-orange?style=for-the-badge&logo=chart.js" alt="Data Analysis"/>
       <img src="https://img.shields.io/badge/ENGETO-Project-green?style=for-the-badge" alt="Engeto"/>
       <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" alt="Status"/>
     </div>
-  </header>
 
-  <main>
-    <section>
-      <h2>🚀 Projekt (🪄)</h2>
-      <blockquote>‘vtípek, to takhle kouzlíte, kouzlíte a najednou vykouzlíte projekt <b>black_rumour</b>’</blockquote>
-      <p>
-        Tento projekt vznikl jako součást <b>ENGETO kurzu: Datová analýza s Pythonem</b>
-        a představuje komplexní analýzu ekonomických vztahů v České republice za období 2006–2018.
-      </p>
-    </section>
+    <h2>🚀 Projekt (🪄)</h2>
+    <blockquote>‘vtípek, to takhle kouzlíte, kouzlíte a najednou vykouzlíte projekt <b>black_rumour</b>’</blockquote>
+    <p>
+      Tento projekt vznikl jako součást <strong>ENGETO kurzu: Datová analýza s Pythonem</strong> a představuje komplexní analýzu ekonomických vztahů v České republice za období 2006–2018.
+    </p>
 
-    <section>
-      <h2>🎯 Motivace & koncept</h2>
-      <ul>
-        <li>💰 <b>Průměrné mzdy</b> napříč odvětvími</li>
-        <li>🍞 <b>Ceny základních potravin</b> (chleba, mléko)</li>
-        <li>⏰ <b>Časové zpoždění</b> těchto efektů</li>
-      </ul>
-    </section>
+    <h2>🎯 Motivace &amp; koncept</h2>
+    <ul>
+      <li>💰 <strong>Průměrné mzdy</strong> napříč odvětvími</li>
+      <li>🍞 <strong>Ceny základních potravin</strong> (chleba, mléko)</li>
+      <li>⏰ <strong>Časové zpoždění</strong> těchto efektů</li>
+    </ul>
 
-    <section>
-      <h2>🗂️ Struktura repozitáře</h2>
-      <pre style="background:#222;color:#eee;padding:1em;border-radius:6px;white-space:pre-line;">
+    <h2>🗂️ Struktura repozitáře</h2>
+    <pre>
 sql-projekt-engeto/
 ├── .gitignore
 ├── README.md
@@ -73,98 +61,87 @@ sql-projekt-engeto/
     │   └── 08_q_5.sql
     └── 05_validation/
         └── 09_data_validation.sql
-      </pre>
-    </section>
+    </pre>
 
-    <section>
-      <h2>🔧 Technické řešení</h2>
-      <ul>
-        <li>🔄 <b>CTE (Common Table Expressions)</b> pro strukturovaný kód</li>
-        <li>📊 <b>Window Functions</b> (<code>LAG</code>, <code>LEAD</code>) pro časové analýzy</li>
-        <li>🔗 <b>Víceúrovňové JOINy</b> pro propojení dat z více zdrojů</li>
-        <li>📈 <b>Agregační funkce</b> pro výpočty průměrů a trendů</li>
-        <li>✅ <b>Validační skripty</b> pro kontrolu kvality dat</li>
-      </ul>
+    <h2>🔧 Technické řešení</h2>
+    <ul>
+      <li>🔄 <strong>CTE (Common Table Expressions)</strong> pro strukturovaný kód</li>
+      <li>📊 <strong>Window Functions</strong> (<code>LAG</code>, <code>LEAD</code>) pro časové analýzy</li>
+      <li>🔗 <strong>Víceúrovňové JOINy</strong> pro propojení dat z více zdrojů</li>
+      <li>📈 <strong>Agregační funkce</strong> pro výpočty průměrů a trendů</li>
+      <li>✅ <strong>Validační skripty</strong> pro kontrolu kvality dat</li>
+    </ul>
+    <p><strong>Datasetové zdroje:</strong></p>
+    <ul>
+      <li><strong>czechiapayroll:</strong> Průměrné hrubé mzdy v ČR (kód typu 5958)</li>
+      <li><strong>czechiaprice:</strong> Ceny vybraných potravin</li>
+      <li><strong>economies &amp; countries:</strong> Makrodata HDP, GINI, populace pro Evropu</li>
+      <li>...others</li>
+    </ul>
 
-      <p><b>Datasetové zdroje:</b></p>
-      <ul>
-        <li><b>czechiapayroll:</b> Průměrné hrubé mzdy v ČR (kód typu 5958)</li>
-        <li><b>czechiaprice:</b> Ceny vybraných potravin</li>
-        <li><b>economies &amp; countries:</b> Makrodata HDP, GINI, populace pro Evropu</li>
-        <li>..others</li>
-      </ul>
-    </section>
+    <h2>📈 Klíčové výsledky</h2>
+    <h3>💼 1) Růst mezd napříč všemi odvětvími</h3>
+    <p>Veškerá odvětví zaznamenala <strong>pozitivní meziroční nárůst</strong> průměrné mzdy v ČR v období 2006–2018. Nejsilněji rostly mzdy v sektoru financí a IT, nejméně pak v odvětví veřejné správy.</p>
+    <h3>🛒 2) Kupní síla domácností – mléko a chleba</h3>
+    <table>
+      <tr>
+        <th>Rok</th>
+        <th>Prům.mzda (CZK)</th>
+        <th>Cena chleba (kg)</th>
+        <th>Cena mléka (l)</th>
+        <th>kg chleba na mzdu</th>
+        <th>l mléka na mzdu</th>
+      </tr>
+      <tr>
+        <td>2006</td><td>20 342,38</td><td>16,12</td><td>14,44</td><td><b>1 261,9</b></td><td><b>1 408,8</b></td>
+      </tr>
+      <tr>
+        <td>2018</td><td>31 980,26</td><td>24,24</td><td>19,82</td><td><b>1 319,3</b></td><td><b>1 613,5</b></td>
+      </tr>
+    </table>
+    <blockquote>📊 <strong>Závěr:</strong> Za 12 let se kupní síla mírně zlepšila – zatímco mzdy vzrostly o <strong>57%</strong>, ceny chleba a mléka vzrostly o <strong>50%</strong> resp. <strong>37%</strong>.</blockquote>
 
-    <section>
-      <h2>📈 Klíčové výsledky</h2>
-      <h3>💼 1) Růst mezd napříč všemi odvětvími</h3>
-      <p>Veškerá odvětví zaznamenala <b>pozitivní meziroční nárůst</b> průměrné mzdy v ČR v období 2006–2018. Nejsilněji rostly mzdy v sektoru financí a IT, nejméně pak v odvětví veřejné správy.</p>
+    <h3>🍯 3) Nejpomalejší růst cen – cukr krystalový</h3>
+    <p>Mezi sledovanými kategoriemi potravin rostly <strong>nejpomaleji ceny krystalového cukru</strong> – dokonce v několika letech mírně klesaly díky stálé dostupnosti a domácí produkci.</p>
+    <h3>📊 4) Vztah HDP vs. mzdy vs. ceny</h3>
+    <table>
+      <tr>
+        <th>Rok</th>
+        <th>HDP (%)</th>
+        <th>Mzdy (%)</th>
+        <th>Ceny (%)</th>
+        <th>Interpretace</th>
+      </tr>
+      <tr><td>2007</td><td>+5,57</td><td>+6,79</td><td>+6,76</td><td>🔥 Silný růst všech ukazatelů</td></tr>
+      <tr><td>2008</td><td>+2,69</td><td>+8,06</td><td>+6,18</td><td>💪 Mzdy rostly rychleji než HDP</td></tr>
+      <tr><td>2009</td><td>-4,66</td><td>+3,25</td><td>-6,41</td><td>📉 Krizový rok – HDP klesl, mzdy stagnace</td></tr>
+      <tr><td>2010</td><td>+2,43</td><td>+2,00</td><td>+1,94</td><td>🔄 Postupné zotavování</td></tr>
+      <tr><td>2011</td><td>+1,76</td><td>+2,27</td><td>+3,35</td><td>⚖️ Stabilní růst s mírnou inflací</td></tr>
+    </table>
 
-      <h3>🛒 2) Kupní síla domácností – mléko a chleba</h3>
-      <table>
-        <tr>
-          <th>Rok</th>
-          <th>Prům.mzda (CZK)</th>
-          <th>Cena chleba (kg)</th>
-          <th>Cena mléka (l)</th>
-          <th>kg chleba na mzdu</th>
-          <th>l mléka na mzdu</th>
-        </tr>
-        <tr>
-          <td>2006</td><td>20 342,38</td><td>16,12</td><td>14,44</td><td><b>1 261,9</b></td><td><b>1 408,8</b></td>
-        </tr>
-        <tr>
-          <td>2018</td><td>31 980,26</td><td>24,24</td><td>19,82</td><td><b>1 319,3</b></td><td><b>1 613,5</b></td>
-        </tr>
-      </table>
-      <blockquote>📊 <b>Závěr:</b> Za 12 let se kupní síla mírně zlepšila – zatímco mzdy vzrostly o <b>57%</b>, ceny chleba a mléka vzrostly o <b>50%</b> resp. <b>37%</b>.</blockquote>
+    <h2>🧠 Analytické poznatky</h2>
+    <h3>✅ Potvrzené hypotézy:</h3>
+    <ul>
+      <li>Pozitivní korelace HDP-mzdy: V letech vysokého růstu HDP (2007, 2008) rostly i mzdy nadprůměrně</li>
+      <li>Rychlejší reakce mezd: Mzdy reagují o trochu lépe na výkyvy HDP, než ceny potravin</li>
+      <li>Asymetrické reakce: Mzdy reagují rychleji na pozitivní změny HDP, než na negativní</li>
+    </ul>
+    <h3>🔍 Zajímavá zjištění:</h3>
+    <ul>
+      <li>Krize 2009: Pokles HDP o 4,66% se projevil jen mírnou korekcí cen (-6,41%), zatímco mzdy stále rostly (+3,25%)</li>
+      <li>Časové zpoždění: Ceny potravin mají tendenci „setrvávat“ díky regulačním mechanismům</li>
+      <li>Stabilita potravin: Většina kategorií rostla rovnoměrně 1–7% ročně bez extrémních výkyvů</li>
+    </ul>
 
-      <h3>🍯 3) Nejpomalejší růst cen – cukr krystalový</h3>
-      <p>Mezi sledovanými kategoriemi potravin rostly <b>nejpomaleji ceny krystalového cukru</b> – dokonce v několika letech mírně klesaly díky stálé dostupnosti a domácí produkci.</p>
-
-      <h3>📊 4) Vztah HDP vs. mzdy vs. ceny</h3>
-      <table>
-        <tr>
-          <th>Rok</th>
-          <th>HDP (%)</th>
-          <th>Mzdy (%)</th>
-          <th>Ceny (%)</th>
-          <th>Interpretace</th>
-        </tr>
-        <tr><td>2007</td><td>+5,57</td><td>+6,79</td><td>+6,76</td><td>🔥 Silný růst všech ukazatelů</td></tr>
-        <tr><td>2008</td><td>+2,69</td><td>+8,06</td><td>+6,18</td><td>💪 Mzdy rostly rychleji než HDP</td></tr>
-        <tr><td>2009</td><td>-4,66</td><td>+3,25</td><td>-6,41</td><td>📉 Krizový rok – HDP klesl, mzdy stagnace</td></tr>
-        <tr><td>2010</td><td>+2,43</td><td>+2,00</td><td>+1,94</td><td>🔄 Postupné zotavování</td></tr>
-        <tr><td>2011</td><td>+1,76</td><td>+2,27</td><td>+3,35</td><td>⚖️ Stabilní růst s mírnou inflací</td></tr>
-      </table>
-    </section>
-
-    <section>
-      <h2>🧠 Analytické poznatky</h2>
-      <h3>✅ Potvrzené hypotézy:</h3>
-      <ul>
-        <li>Pozitivní korelace HDP-mzdy: V letech vysokého růstu HDP (2007, 2008) rostly i mzdy nadprůměrně</li>
-        <li>Rychlejší reakce mezd: Mzdy reagují o trochu lépe na výkyvy HDP, než ceny potravin</li>
-        <li>Asymetrické reakce: Mzdy reagují rychleji na pozitivní změny HDP, než na negativní</li>
-      </ul>
-      <h3>🔍 Zajímavá zjištění:</h3>
-      <ul>
-        <li>Krize 2009: Pokles HDP o 4,66% se projevil jen mírnou korekcí cen (-6,41%), zatímco mzdy stále rostly (+3,25%)</li>
-        <li>Časové zpoždění: Ceny potravin mají tendenci „setrvávat“ díky regulačním mechanismům</li>
-        <li>Stabilita potravin: Většina kategorií rostla rovnoměrně 1–7% ročně bez extrémních výkyvů</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>🚀 Jak spustit analýzu</h2>
-      <h3>Předpoklady</h3>
-      <ul>
-        <li>PostgreSQL 12+</li>
-        <li>Přístup k ENGETO databázi</li>
-        <li>DBeaver / pgAdmin / psql</li>
-      </ul>
-      <h3>Postup spuštění</h3>
-      <pre>
+    <h2>🚀 Jak spustit analýzu</h2>
+    <h3>Předpoklady</h3>
+    <ul>
+      <li>PostgreSQL 12+</li>
+      <li>Přístup k ENGETO databázi</li>
+      <li>DBeaver / pgAdmin / psql</li>
+    </ul>
+    <h3>Postup spuštění</h3>
+    <pre>
 -- 1. Nastavení schema
 SET search_path TO data_academy_content;
 -- 2. Vytvoření pohledů
@@ -173,54 +150,41 @@ SET search_path TO data_academy_content;
 \i sql/g_5.sql
 -- 4. Validace výsledků
 \i sql/validation.sql
-      </pre>
-    </section>
+    </pre>
 
-    <section>
-      <h2>💡 Možná rozšíření</h2>
-      <ul>
-        <li>🗺️ Regionální analýza podle krajů ČR</li>
-        <li>🏭 Sektorová analýza podle odvětví ekonomiky</li>
-        <li>📅 Rozšíření časové řady o roky 2019–2024</li>
-        <li>📊 Interaktivní dashboard v Power BI/Tableau</li>
-        <li>🤖 Machine Learning modely pro predikci trendů</li>
-      </ul>
-    </section>
+    <h2>💡 Možná rozšíření</h2>
+    <ul>
+      <li>🗺️ Regionální analýza podle krajů ČR</li>
+      <li>🏭 Sektorová analýza podle odvětví ekonomiky</li>
+      <li>📅 Rozšíření časové řady o roky 2019–2024</li>
+      <li>📊 Interaktivní dashboard v Power BI/Tableau</li>
+      <li>🤖 Machine Learning modely pro predikci trendů</li>
+    </ul>
 
-    <section>
-      <h2>📚 Použitá literatura & zdroje</h2>
-      <ul>
-        <li><a href="https://engeto.cz/">ENGETO Data Academy</a></li>
-        <li><a href="https://www.postgresql.org/docs/current/tutorial-window.html">PostgreSQL Window Functions Documentation</a></li>
-      </ul>
-    </section>
+    <h2>📚 Použitá literatura &amp; zdroje</h2>
+    <ul>
+      <li><a href="https://engeto.cz/">ENGETO Data Academy</a></li>
+      <li><a href="https://www.postgresql.org/docs/current/tutorial-window.html">PostgreSQL Window Functions Documentation</a></li>
+    </ul>
 
-    <section>
-      <h2>👨‍💻 O autorovi</h2>
-      <p><b>Ivo Doležal</b></p>
-      <ul>
-        <li>🐙 GitHub: <a href="https://github.com/ivaneklumberjack888">@ivaneklumberjack888</a></li>
-        <li>💼 LinkedIn: <a href="https://linkedin.com/in/ivan-eklum">ivodolezal888</a></li>
-        <li>📧 Email: <a href="mailto:ivousd@gmail.com">ivousd@gmail.com</a></li>
-      </ul>
-      <p>ENGETO Data analyst with Python, tímto uvádím lektory, kteří se mnou spolupracovali nocí a ránem. Rád bych jim poděkoval za spolupráci. Děkuji Pavle H., Matoušovi a Matoušovi, Jirkovi, Honzovi a Honzovi, Davidovi Příhodovi xD a všem ostatním. Díky. Nejvíc samozřejmě manželce. 🥰</p>
-      <blockquote>“Data jsou nová ropa, ale pouze pokud je dokážeme správně zpracovat a interpretovat.”</blockquote>
-    </section>
+    <h2>👨‍💻 O autorovi</h2>
+    <p><strong>Ivo Doležal</strong></p>
+    <ul>
+      <li>🐙 GitHub: <a href="https://github.com/ivaneklumberjack888">@ivaneklumberjack888</a></li>
+      <li>💼 LinkedIn: <a href="https://linkedin.com/in/ivan-eklum">ivodolezal888</a></li>
+      <li>📧 Email: <a href="mailto:ivousd@gmail.com">ivousd@gmail.com</a></li>
+    </ul>
+    <p>ENGETO Data analyst with Python: tímto uvádím lektory, kteří se mnou spolupracovali nocí a ránem. Rád bych jim poděkoval za spolupráci. Děkuji Pavle H., Matoušovi a Matoušovi, Jirkovi, Honzovi a Honzovi, Davidovi Příhodovi xD a všem ostatním. Díky. Nejvíc samozřejmě manželce. 🥰</p>
+    <blockquote>“Data jsou nová ropa, ale pouze pokud je dokážeme správně zpracovat a interpretovat.”</blockquote>
 
-    <section>
-      <h2>📜 Licence</h2>
-      <p>Tento projekt je licencován pod Apache – viz <a href="LICENSE.md">LICENSE.md</a> pro detaily.</p>
-    </section>
+    <h2>📜 Licence</h2>
+    <p>Tento projekt je licencován pod Apache – viz LICENSE.md pro detaily.</p>
 
     <section style="text-align:center;margin:2em 0;">
       <h3>⭐ Pokud se vám projekt líbí, dejte hvězdičku!</h3>
       <img src="https://img.shields.io/github/stars/ivaneklumberjack888/ENGETO-SQL-Project?style=social" alt="GitHub stars"/>
-      <p><b>Vytvořeno s ❤️ pro ENGETO. Váš SQL Project</b></p>
+      <p><strong>Vytvořeno s ❤️ pro ENGETO. Váš SQL Project</strong></p>
     </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Ivo Doležal • <a href="mailto:ivousd@gmail.com">ivousd@gmail.com</a></p>
-  </footer>
+  </div>
 </body>
 </html>
