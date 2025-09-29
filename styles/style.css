@@ -1,0 +1,86 @@
+:root {
+  --h1-color: #B29180;
+  --h2-color: #A8E063;
+  --text-color: #b4ddb4;
+  --bg-glass: rgba(28,50,28,0.83);
+  --border-glass: rgba(88,176,80,0.39);
+  --accent: #A8E063;
+  --radius: 20px;
+  --shadow: 0 8px 48px rgba(0,0,0,0.08);
+  --max-width: 800px;
+}
+body {
+  background: linear-gradient(120deg, #305b33 0%, #1e3223 100%);
+  color: var(--text-color);
+  font-family: 'Inter', Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.container, .glass-card {
+  max-width: var(--max-width);
+  margin: 3rem auto;
+  padding: 2rem 1.5rem;
+  background: var(--bg-glass);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-glass);
+  backdrop-filter: blur(8px);
+}
+h1, h2 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+h3 {
+  color: var(--h2-color);
+  margin-bottom: 0.5rem;
+}
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #ffffb1;
+}
+pre, code {
+  background: #263629;
+  color: #e9f5e5;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+  display: block;
+  margin: 1em 0;
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  background: #263629;
+}
+th, td {
+  border: 1px solid #41584b;
+  padding: 0.7em 0.5em;
+  text-align: center;
+}
+th {
+  background: #2b402e;
+  color: #A8E063;
+}
+blockquote {
+  background: rgba(180,221,180,0.08);
+  border-left: 4px solid var(--accent);
+  padding: 0.7em 1.2em;
+  margin: 1.5em 0;
+  color: #A8E063;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .container, .glass-card {
+    padding: 1rem 0.3rem;
+    margin: 1rem 0.2rem;
+  }
+  h1 {font-size: 1.4rem;}
+  h2 {font-size: 1.1rem;}
+}
