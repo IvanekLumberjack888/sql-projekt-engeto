@@ -11,13 +11,12 @@
 
 body {
   font-family: 'Inter', 'Montserrat', Arial, sans-serif;
-  background:
-    linear-gradient(120deg, rgba(48,91,51,0.90) 0%, rgba(30,50,35,0.82) 100%),
-    url('images/background.jpg') center/cover fixed no-repeat;
+  background: url('images/background.jpg') center/cover fixed no-repeat;
   min-height: 100vh;
   margin: 0;
   padding: 45px 0;
 }
+
 
 .glass-card {
   background: var(--bg-glass);
