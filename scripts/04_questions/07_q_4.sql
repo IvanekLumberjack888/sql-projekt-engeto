@@ -17,7 +17,7 @@ WITH salary_growth AS (
 ),
 price_growth AS (
   SELECT
-    price_year    AS payroll_year,
+    price_year AS payroll_year,
     ROUND(AVG(price_change_percent)::numeric, 2) AS avg_price_growth
   FROM v_price_yearly_changes
   WHERE price_change_percent IS NOT NULL
