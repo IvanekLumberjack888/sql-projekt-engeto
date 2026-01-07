@@ -30,7 +30,7 @@ Tento projekt vznikl jako součást **ENGETO kurzu: Datová analýza s Pythonem*
 ---
 
 ## 🗂️ Struktura repozitáře
-
+```text
 sql-projekt-engeto/
 ├── .gitignore
 ├── README.md
@@ -57,7 +57,7 @@ sql-projekt-engeto/
     │   └── 08_q_5.sql
     └── 05_validation/
         └── 09_data_validation.sql
-
+```
 ---
 
 ## 🔧 Technické řešení
