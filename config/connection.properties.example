@@ -1,0 +1,8 @@
+# Database Connection Configuration
+# Copy this file to connection.properties and fill in your actual values
+
+db.host=localhost
+db.port=5432
+db.name=data_academy_content
+db.user=postgres
+db.password=YOUR_PASSWORD_HERE
