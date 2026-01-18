@@ -3,7 +3,7 @@
 -- Otázka 1: Rostou mzdy ve všech odvětvích?
 -- PAYROLL TRENDS IN CZECHIA (2006-2018)
 ---------------------------------------------------------
--- Použité vjůčko v_annuall_sumarry
+-- Použité vjůčko v_annuall_summary
 WITH extremes AS (
 	SELECT
 		industry_branch_code,
